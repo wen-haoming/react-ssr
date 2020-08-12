@@ -28656,17 +28656,37 @@ Object(react_dom__WEBPACK_IMPORTED_MODULE_2__["hydrate"])( /*#__PURE__*/react__W
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ "./src/pages/Home/style.css");
+/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_1__);
+
 
 
 const Home = () => {
   const [num, setNum] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, num), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     onClick: () => setNum(num + 1)
-  }, "+"));
+  }, "+"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _style_css__WEBPACK_IMPORTED_MODULE_1___default.a.wrap
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _style_css__WEBPACK_IMPORTED_MODULE_1___default.a.item
+  })));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (Home);
 
+/***/ }),
+
+/***/ "./src/pages/Home/style.css":
+/*!**********************************!*\
+  !*** ./src/pages/Home/style.css ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
+module.exports = {"wrap":"_2Ri1j4t0z4B4i9HRsJJgHQ","item":"_2mcJegb1bOtVHwZp-apAT"};
+
 /***/ })
 
 /******/ });
+//# sourceMappingURL=bundle.5aa8f.js.map

@@ -1,9 +1,9 @@
 const path = require('path')
 const resolve = (src)=>path.resolve(__dirname,src)
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const miniCssExtractPlugin = require('mini-css-extract-plugin')
 
 module.exports = {
-  
     resolve:{
         alias:{
             '@':resolve('./src'),
@@ -25,7 +25,8 @@ module.exports = {
                        }
                    }
                ]
-           }
+           },
+          
        ] 
     },
     plugins:[
