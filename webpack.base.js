@@ -26,6 +26,17 @@ module.exports = {
                    }
                ]
            },
+           {
+               test:/.(png|jpeg|jpg)$/,
+               use:[
+                   {
+                       loader:'url-loader',
+                       options:{
+                           limit:300
+                       }
+                   }
+               ]
+           }
           
        ] 
     },

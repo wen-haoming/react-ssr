@@ -86,22 +86,24 @@
 /************************************************************************/
 /******/ ({
 
-/***/ "../../../node_modules/css-loader/dist/cjs.js?modules!./node_modules/postcss-loader/src/index.js!./src/pages/Home/style.css":
-/*!**********************************************************************************************************************************!*\
-  !*** /Users/wenhaoming/node_modules/css-loader/dist/cjs.js?modules!./node_modules/postcss-loader/src!./src/pages/Home/style.css ***!
-  \**********************************************************************************************************************************/
+/***/ "../../../node_modules/css-loader/dist/cjs.js?modules!./node_modules/less-loader/dist/cjs.js!./src/pages/Home/style.less":
+/*!****************************************************************************************************************************************!*\
+  !*** /Users/wenhaoming/node_modules/css-loader/dist/cjs.js?modules!./node_modules/less-loader/dist/cjs.js!./src/pages/Home/style.less ***!
+  \****************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 // Imports
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "../../../node_modules/css-loader/dist/runtime/api.js");
+var ___CSS_LOADER_GET_URL_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/getUrl.js */ "../../../node_modules/css-loader/dist/runtime/getUrl.js");
+var ___CSS_LOADER_URL_IMPORT_0___ = __webpack_require__(/*! ./img.jpeg */ "./src/pages/Home/img.jpeg");
 exports = ___CSS_LOADER_API_IMPORT___(false);
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = ___CSS_LOADER_GET_URL_IMPORT___(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-exports.push([module.i, "\n._2Ri1j4t0z4B4i9HRsJJgHQ{\n   width:100px;\n   height:100px;\n   background-color: red;\n \n}\n\n._2mcJegb1bOtVHwZp-apAT{\n    width:50px;\n    height:50px;\n    background-color: blue;\n    transform: rotate(10);\n    transition: all 0.5s;\n}  \n\n ", ""]);
+exports.push([module.i, "._24J16xjBNpsDfsdcB8BMjd .wrap {\n  width: 100px;\n  height: 100px;\n  background-color: red;\n}\n._24J16xjBNpsDfsdcB8BMjd .item {\n  width: 50px;\n  height: 50px;\n  background-color: blue;\n  transform: rotate(10);\n  transition: all 0.5s;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n", ""]);
 // Exports
 exports.locals = {
-	"wrap": "_2Ri1j4t0z4B4i9HRsJJgHQ",
-	"item": "_2mcJegb1bOtVHwZp-apAT"
+	"namesapce": "_24J16xjBNpsDfsdcB8BMjd"
 };
 module.exports = exports;
 
@@ -213,6 +215,51 @@ function toComment(sourceMap) {
 
 /***/ }),
 
+/***/ "../../../node_modules/css-loader/dist/runtime/getUrl.js":
+/*!************************************************************************!*\
+  !*** /Users/wenhaoming/node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = url && url.__esModule ? url.default : url;
+
+  if (typeof url !== 'string') {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, '\\n'), "\"");
+  }
+
+  return url;
+};
+
+/***/ }),
+
 /***/ "./node_modules/isomorphic-style-loader/insertCss.js":
 /*!***********************************************************!*\
   !*** ./node_modules/isomorphic-style-loader/insertCss.js ***!
@@ -318,6 +365,19 @@ module.exports = insertCss;
 
 /***/ }),
 
+/***/ "./src/pages/Home/img.jpeg":
+/*!*********************************!*\
+  !*** ./src/pages/Home/img.jpeg ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "f2dcb25d446d14cec5c05d51dcfc239b.jpeg");
+
+/***/ }),
+
 /***/ "./src/pages/Home/index.jsx":
 /*!**********************************!*\
   !*** ./src/pages/Home/index.jsx ***!
@@ -329,19 +389,22 @@ module.exports = insertCss;
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.css */ "./src/pages/Home/style.css");
-/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_css__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _style_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./style.less */ "./src/pages/Home/style.less");
+/* harmony import */ var _style_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_style_less__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _img_jpeg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./img.jpeg */ "./src/pages/Home/img.jpeg");
+
 
 
 
 const Home = () => {
   const [num, setNum] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
+  console.log(_style_less__WEBPACK_IMPORTED_MODULE_1___default.a);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, num), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     onClick: () => setNum(num + 1)
   }, "+"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _style_css__WEBPACK_IMPORTED_MODULE_1___default.a.wrap
+    className: _style_less__WEBPACK_IMPORTED_MODULE_1___default.a.namesapce
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
-    className: _style_css__WEBPACK_IMPORTED_MODULE_1___default.a.item
+    className: "item"
   })));
 };
 
@@ -349,16 +412,16 @@ const Home = () => {
 
 /***/ }),
 
-/***/ "./src/pages/Home/style.css":
-/*!**********************************!*\
-  !*** ./src/pages/Home/style.css ***!
-  \**********************************/
+/***/ "./src/pages/Home/style.less":
+/*!***********************************!*\
+  !*** ./src/pages/Home/style.less ***!
+  \***********************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 
     var refs = 0;
-    var css = __webpack_require__(/*! !../../../../../../node_modules/css-loader/dist/cjs.js?modules!../../../node_modules/postcss-loader/src!./style.css */ "../../../node_modules/css-loader/dist/cjs.js?modules!./node_modules/postcss-loader/src/index.js!./src/pages/Home/style.css");
+    var css = __webpack_require__(/*! !../../../../../../node_modules/css-loader/dist/cjs.js?modules!../../../node_modules/less-loader/dist/cjs.js!./style.less */ "../../../node_modules/css-loader/dist/cjs.js?modules!./node_modules/less-loader/dist/cjs.js!./src/pages/Home/style.less");
     var insertCss = __webpack_require__(/*! ../../../node_modules/isomorphic-style-loader/insertCss.js */ "./node_modules/isomorphic-style-loader/insertCss.js");
     var content = typeof css === 'string' ? [[module.i, css, '']] : css;
 

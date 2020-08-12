@@ -15,7 +15,7 @@ const config = {
     target:'node', // node环境
     devtool:'none',// 不需要
     module: {
-        rules: [{ test: /\.(css|less)$/, use: ['isomorphic-style-loader',"css-loader?modules", "postcss-loader"] }]
+        rules: [{ test: /\.(css|less)$/, use: ['isomorphic-style-loader',"css-loader?modules", "less-loader"] }]
       }
 }
 

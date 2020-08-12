@@ -15,8 +15,8 @@ const config = {
     module:{
         rules:[
             {
-                test: /\.css$/,
-                use: [MiniCssExtractPlugin.loader, "css-loader?modules", "postcss-loader"]
+                test: /\.(css|less)$/,
+                use: [MiniCssExtractPlugin.loader, "css-loader?modules","less-loader"]
               },
         ]
     },
