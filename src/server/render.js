@@ -1,6 +1,7 @@
 import React from  'react'
 import RenderApp from './App.jsx';
 import {renderToString} from 'react-dom/server'
+import getScript from './getScript'
 
 const render = (req,res)=>{
 
@@ -15,7 +16,8 @@ const render = (req,res)=>{
         <title>Document</title>
     </head>
     <body>
-        ${app}
+        <div id="root" >${app}</div>
+       ${getScript()}
     </body>
     </html>
     `

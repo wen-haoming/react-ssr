@@ -1,12 +1,17 @@
+const path = require('path')
+const resolve = (src)=>path.resolve(__dirname,src)
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+
 module.exports = {
+  
     resolve:{
         alias:{
-            '@':'./src',
+            '@':resolve('./src'),
         },
         extensions: [".js", ".jsx", ".css"] // 配置识别文件路径
     },
     mode:'development',
-    watch:true,
+    watch:true, // 热更新
     module:{
        rules:[
            {
@@ -22,5 +27,10 @@ module.exports = {
                ]
            }
        ] 
-    }
+    },
+    plugins:[
+        new CleanWebpackPlugin({
+            cleanOnceBeforeBuildPatterns: ['**/*', '!favicon.ico*'],
+        })
+    ]
 }

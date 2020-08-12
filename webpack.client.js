@@ -4,8 +4,12 @@ const {merge} = require('webpack-merge')
 const webpackBase  = require('./webpack.base')
 
 const config = {
-    entry:{
-              
+    entry:resolve('./src/client/index.js'),
+    devtool:'source-map',
+    output:{
+        filename:'js/bundle.[hash:5].js',
+        path:resolve('./public'),
+        publicPath:'/'
     },
     
 }

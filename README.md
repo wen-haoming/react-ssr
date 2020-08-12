@@ -1,15 +1,11 @@
+## react注水到页面
 
+上一节使用express把react首页展示了出来，但是我们添加事件其实是没有效果的，因为我们需要用我们现在工程的client(客户端)去接管显然好的页面。
 
-本节目标，先搭建工程目录，配置服务端打包环境，能够渲染react页面
+1. 我们首先编写client的代码，我们看到client有两个文件App和index.js，其实app.jsx是用于包裹根组件的，后面会比较有用，所以client拆分出两个文件，然后引入pages的业务代码，在index中我们使用hydrate去注水操作，那么我们的client的代码已经完成了。
 
-1. 首先我们需要先在src中建立3个文件夹 client(客户端) pages(业务代码) server(服务端)
+2. 那么我们现在就需要把client的代码进行打包, 主要是配置好entry和output即可, 文件名最好添加文件指纹
 
-2. webpack建立三个文件，base，client，server
-    - server 最好和client保持一致的**esm**语法，而不是**cjs**，配置详情可以查看该文件
-
-3. express服务器的搭建
-   -  src/server/index
-   -  其中我把渲染app的中间件抽离出来
-
-4. 组件编写
-   -  src/pages/
+3. 那么我们已经完成了客户端代码的打包，那么我们就需要把客户端的代码插入到server的render文件里面。
+    - 编写脚本文件getScript，遍历public里的js
+    - 然后把结果插入到render文件中

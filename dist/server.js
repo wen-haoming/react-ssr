@@ -101,7 +101,7 @@ __webpack_require__.r(__webpack_exports__);
 
 const Home = () => {
   const [num, setNum] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, num), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, num), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     onClick: () => setNum(num + 1)
   }, "+"));
 };
@@ -133,6 +133,34 @@ const App = () => {
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/server/getScript.js":
+/*!*********************************!*\
+  !*** ./src/server/getScript.js ***!
+  \*********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! fs */ "fs");
+/* harmony import */ var fs__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(fs__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! path */ "path");
+/* harmony import */ var path__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_1__);
+
+
+
+let getScript = () => {
+  let fileArr = fs__WEBPACK_IMPORTED_MODULE_0___default.a.readdirSync('./public/js'); // 注意这里最好使用相对路径
+
+  return fileArr.filter(item => item.endsWith('.js')).map(item => {
+    return `<script src="/js/${item}"></script>`;
+  });
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (getScript);
 
 /***/ }),
 
@@ -177,6 +205,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _App_jsx__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./App.jsx */ "./src/server/App.jsx");
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-dom/server */ "react-dom/server");
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _getScript__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getScript */ "./src/server/getScript.js");
+
 
 
 
@@ -193,7 +223,8 @@ const render = (req, res) => {
         <title>Document</title>
     </head>
     <body>
-        ${app}
+        <div id="root" >${app}</div>
+       ${Object(_getScript__WEBPACK_IMPORTED_MODULE_3__["default"])()}
     </body>
     </html>
     `;
@@ -212,6 +243,17 @@ const render = (req, res) => {
 /***/ (function(module, exports) {
 
 module.exports = require("express");
+
+/***/ }),
+
+/***/ "fs":
+/*!*********************!*\
+  !*** external "fs" ***!
+  \*********************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("fs");
 
 /***/ }),
 
