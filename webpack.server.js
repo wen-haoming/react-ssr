@@ -16,7 +16,7 @@ const config = {
     devtool:'none',// 不需要
     module: {
         rules: [{ test: /\.(css|less)$/, use: ['isomorphic-style-loader',"css-loader?modules", "less-loader"] }]
-      }
+    }
 }
 
 module.exports = merge(webpackBase,config)

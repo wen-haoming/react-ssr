@@ -86,6 +86,28 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "../../../node_modules/css-loader/dist/cjs.js?modules!./node_modules/less-loader/dist/cjs.js!./src/Components/Header/index.less":
+/*!***********************************************************************************************************************************************!*\
+  !*** /Users/wenhaoming/node_modules/css-loader/dist/cjs.js?modules!./node_modules/less-loader/dist/cjs.js!./src/Components/Header/index.less ***!
+  \***********************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+// Imports
+var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../../../../../../node_modules/css-loader/dist/runtime/api.js */ "../../../node_modules/css-loader/dist/runtime/api.js");
+exports = ___CSS_LOADER_API_IMPORT___(false);
+// Module
+exports.push([module.i, "._2SE-2J9QYyUUCWE5Qjktao {\n  display: flex;\n  align-items: center;\n  height: 50px;\n  background-color: yellowgreen;\n  color: #ccc;\n}\n._2vPNMFspN6CQDGhwRSmrZg {\n  width: 100px;\n  height: 30px;\n  margin: 0 30px;\n  background-color: lightblue;\n  color: #f40;\n}\n._2vPNMFspN6CQDGhwRSmrZg:hover {\n  background: #ccc;\n  color: black;\n}\n", ""]);
+// Exports
+exports.locals = {
+	"headerWrap": "_2SE-2J9QYyUUCWE5Qjktao",
+	"item": "_2vPNMFspN6CQDGhwRSmrZg"
+};
+module.exports = exports;
+
+
+/***/ }),
+
 /***/ "../../../node_modules/css-loader/dist/cjs.js?modules!./node_modules/less-loader/dist/cjs.js!./src/pages/Home/style.less":
 /*!****************************************************************************************************************************************!*\
   !*** /Users/wenhaoming/node_modules/css-loader/dist/cjs.js?modules!./node_modules/less-loader/dist/cjs.js!./src/pages/Home/style.less ***!
@@ -365,6 +387,90 @@ module.exports = insertCss;
 
 /***/ }),
 
+/***/ "./src/Components/Header/index.jsx":
+/*!*****************************************!*\
+  !*** ./src/Components/Header/index.jsx ***!
+  \*****************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.less */ "./src/Components/Header/index.less");
+/* harmony import */ var _index_less__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_index_less__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_2__);
+
+
+
+
+const Header = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: _index_less__WEBPACK_IMPORTED_MODULE_1___default.a.headerWrap
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/"
+  }, "\u9996\u9875")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+    className: "item"
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["Link"], {
+    to: "/admin"
+  }, "\u4E2A\u4EBA\u9875\u9762")));
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Header);
+
+/***/ }),
+
+/***/ "./src/Components/Header/index.less":
+/*!******************************************!*\
+  !*** ./src/Components/Header/index.less ***!
+  \******************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+
+    var refs = 0;
+    var css = __webpack_require__(/*! !../../../../../../node_modules/css-loader/dist/cjs.js?modules!../../../node_modules/less-loader/dist/cjs.js!./index.less */ "../../../node_modules/css-loader/dist/cjs.js?modules!./node_modules/less-loader/dist/cjs.js!./src/Components/Header/index.less");
+    var insertCss = __webpack_require__(/*! ../../../node_modules/isomorphic-style-loader/insertCss.js */ "./node_modules/isomorphic-style-loader/insertCss.js");
+    var content = typeof css === 'string' ? [[module.i, css, '']] : css;
+
+    exports = module.exports = css.locals || {};
+    exports._getContent = function() { return content; };
+    exports._getCss = function() { return '' + css; };
+    exports._insertCss = function(options) { return insertCss(content, options) };
+
+    // Hot Module Replacement
+    // https://webpack.github.io/docs/hot-module-replacement
+    // Only activated in browser context
+    if (false) { var removeCss; }
+  
+
+/***/ }),
+
+/***/ "./src/pages/Admin/index.jsx":
+/*!***********************************!*\
+  !*** ./src/pages/Admin/index.jsx ***!
+  \***********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+const Admin = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Admin");
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (Admin);
+
+/***/ }),
+
 /***/ "./src/pages/Home/img.jpeg":
 /*!*********************************!*\
   !*** ./src/pages/Home/img.jpeg ***!
@@ -438,6 +544,84 @@ const Home = () => {
 
 /***/ }),
 
+/***/ "./src/pages/NotFound/index.jsx":
+/*!**************************************!*\
+  !*** ./src/pages/NotFound/index.jsx ***!
+  \**************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+
+
+const NotFound = () => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "404 NotFound");
+};
+
+/* harmony default export */ __webpack_exports__["default"] = (NotFound);
+
+/***/ }),
+
+/***/ "./src/routers/config.js":
+/*!*******************************!*\
+  !*** ./src/routers/config.js ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/pages/Home */ "./src/pages/Home/index.jsx");
+/* harmony import */ var _pages_Admin__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/pages/Admin */ "./src/pages/Admin/index.jsx");
+/* harmony import */ var _pages_NotFound__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/pages/NotFound */ "./src/pages/NotFound/index.jsx");
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = ([{
+  key: '/home',
+  path: '/',
+  exact: true,
+  component: _pages_Home__WEBPACK_IMPORTED_MODULE_0__["default"]
+}, {
+  key: '/admin',
+  path: '/admin',
+  exact: true,
+  component: _pages_Admin__WEBPACK_IMPORTED_MODULE_1__["default"]
+}, {
+  key: '/NotFound',
+  component: _pages_NotFound__WEBPACK_IMPORTED_MODULE_2__["default"]
+}]);
+
+/***/ }),
+
+/***/ "./src/routers/index.jsx":
+/*!*******************************!*\
+  !*** ./src/routers/index.jsx ***!
+  \*******************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _Components_Header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/Components/Header */ "./src/Components/Header/index.jsx");
+/* harmony import */ var react_router_config__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-config */ "react-router-config");
+/* harmony import */ var react_router_config__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_router_config__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _config__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./config */ "./src/routers/config.js");
+
+
+
+
+/* harmony default export */ __webpack_exports__["default"] = (() => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Components_Header__WEBPACK_IMPORTED_MODULE_1__["default"], null), Object(react_router_config__WEBPACK_IMPORTED_MODULE_2__["renderRoutes"])(_config__WEBPACK_IMPORTED_MODULE_3__["default"]));
+});
+
+/***/ }),
+
 /***/ "./src/server/App.jsx":
 /*!****************************!*\
   !*** ./src/server/App.jsx ***!
@@ -450,14 +634,58 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _pages_Home__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../pages/Home */ "./src/pages/Home/index.jsx");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react-router-dom */ "react-router-dom");
+/* harmony import */ var react_router_dom__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_router_dom__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _routers_index__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../routers/index */ "./src/routers/index.jsx");
 
 
 
-const App = () => {
-  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_pages_Home__WEBPACK_IMPORTED_MODULE_1__["default"], null);
+
+
+const App = ({
+  location,
+  context
+}) => {
+  return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_2__["StaticRouter"], {
+    location: location,
+    context: context
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_routers_index__WEBPACK_IMPORTED_MODULE_3__["default"], null));
 };
 
 /* harmony default export */ __webpack_exports__["default"] = (App);
+
+/***/ }),
+
+/***/ "./src/server/getHTML.jsx":
+/*!********************************!*\
+  !*** ./src/server/getHTML.jsx ***!
+  \********************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _getScript__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./getScript */ "./src/server/getScript.js");
+/* harmony import */ var _getLink__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./getLink */ "./src/server/getLink.js");
+
+
+/* harmony default export */ __webpack_exports__["default"] = (app => {
+  return `
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        ${Object(_getLink__WEBPACK_IMPORTED_MODULE_1__["default"])()}
+    </head>
+    <body>
+        <div id="root" >${app}</div>
+       ${Object(_getScript__WEBPACK_IMPORTED_MODULE_0__["default"])()}
+    </body>
+    </html>
+    `;
+});
 
 /***/ }),
 
@@ -554,6 +782,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_dom_server__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react_dom_server__WEBPACK_IMPORTED_MODULE_2__);
 /* harmony import */ var _getScript__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./getScript */ "./src/server/getScript.js");
 /* harmony import */ var _getLink__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./getLink */ "./src/server/getLink.js");
+/* harmony import */ var _getHTML__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./getHTML */ "./src/server/getHTML.jsx");
+
 
 
 
@@ -561,23 +791,13 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const render = (req, res) => {
-  let app = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_2__["renderToString"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], null)); // 渲染字符串信息
+  const context = {};
+  let app = Object(react_dom_server__WEBPACK_IMPORTED_MODULE_2__["renderToString"])( /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_App_jsx__WEBPACK_IMPORTED_MODULE_1__["default"], {
+    location: req.path,
+    context: context
+  })); // 渲染字符串信息
 
-  let html = `
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
-        ${Object(_getLink__WEBPACK_IMPORTED_MODULE_4__["default"])()}
-    </head>
-    <body>
-        <div id="root" >${app}</div>
-       ${Object(_getScript__WEBPACK_IMPORTED_MODULE_3__["default"])()}
-    </body>
-    </html>
-    `;
+  let html = Object(_getHTML__WEBPACK_IMPORTED_MODULE_5__["default"])(app);
   res.send(html);
 };
 
@@ -637,6 +857,28 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("react-dom/server");
+
+/***/ }),
+
+/***/ "react-router-config":
+/*!**************************************!*\
+  !*** external "react-router-config" ***!
+  \**************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-router-config");
+
+/***/ }),
+
+/***/ "react-router-dom":
+/*!***********************************!*\
+  !*** external "react-router-dom" ***!
+  \***********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("react-router-dom");
 
 /***/ })
 
