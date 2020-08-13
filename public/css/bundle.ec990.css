@@ -9,7 +9,7 @@
   background-color: blue;
   transform: rotate(10);
   transition: all 0.5s;
-  background-image: url(/f2dcb25d446d14cec5c05d51dcfc239b.jpeg);
+  background-image: url(data:image/jpeg;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiZjJkY2IyNWQ0NDZkMTRjZWM1YzA1ZDUxZGNmYzIzOWIuanBlZyI7);
 }
 
 body {
@@ -17,4 +17,4 @@ body {
 }
 
 
-/*# sourceMappingURL=bundle.f19b9.css.map*/
+/*# sourceMappingURL=bundle.ec990.css.map*/

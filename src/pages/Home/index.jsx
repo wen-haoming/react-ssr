@@ -4,7 +4,6 @@ import img from './img.jpeg'
 
 const Home = ()=>{
    const [num,setNum] = useState(0)
-    console.log(styles)
    return <>
         <h1>Home</h1>
         <span>{num}</span>

@@ -374,7 +374,7 @@ module.exports = insertCss;
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony default export */ __webpack_exports__["default"] = (__webpack_require__.p + "f2dcb25d446d14cec5c05d51dcfc239b.jpeg");
+/* harmony default export */ __webpack_exports__["default"] = ("data:image/jpeg;base64,ZXhwb3J0IGRlZmF1bHQgX193ZWJwYWNrX3B1YmxpY19wYXRoX18gKyAiZjJkY2IyNWQ0NDZkMTRjZWM1YzA1ZDUxZGNmYzIzOWIuanBlZyI7");
 
 /***/ }),
 
@@ -398,7 +398,6 @@ __webpack_require__.r(__webpack_exports__);
 
 const Home = () => {
   const [num, setNum] = Object(react__WEBPACK_IMPORTED_MODULE_0__["useState"])(0);
-  console.log(_style_less__WEBPACK_IMPORTED_MODULE_1___default.a);
   return /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_0___default.a.Fragment, null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", null, "Home"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("span", null, num), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("button", {
     onClick: () => setNum(num + 1)
   }, "+"), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
