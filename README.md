@@ -12,3 +12,7 @@
 ## 章节
 
 1. [server渲染react组件](https://github.com/wen-haoming/react-ssr/tree/renderReact) 
+2. [react注水到页面](https://github.com/wen-haoming/react-ssr/tree/2)
+3. [如何解决样式以及图片问题](https://github.com/wen-haoming/react-ssr/tree/3)
+4. [如何引入路由配置](https://github.com/wen-haoming/react-ssr/tree/4)
+5. [如何引入redux呢](https://github.com/wen-haoming/react-ssr/tree/5)
