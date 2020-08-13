@@ -18,6 +18,17 @@ const config = {
                 test: /\.(css|less)$/,
                 use: [MiniCssExtractPlugin.loader, "css-loader?modules","less-loader"]
               },
+              {
+                test:/.(png|jpeg|jpg)$/,
+                use:[
+                    {
+                        loader:'url-loader',
+                        options:{
+                           name:'img/[name].[hash:5].[ext]',
+                        }
+                    }
+                ]
+            }
         ]
     },
     plugins:[

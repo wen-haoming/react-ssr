@@ -4,10 +4,10 @@ import {Link} from 'react-router-dom'
 
 const Header  = ()=>{
     return <div className={styles.headerWrap}>
-        <div className="item">
+        <div className={styles.item}>
             <Link to="/">首页</Link>
         </div>
-        <div className="item">
+        <div className={styles.item}>
             <Link to="/admin">个人页面</Link>
         </div>
     </div>
