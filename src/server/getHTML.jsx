@@ -1,7 +1,7 @@
 import getScript from './getScript'
 import getLink from './getLink'
 
-export default (app)=>{
+export default (app,path,store)=>{
     return `
     <!DOCTYPE html>
     <html lang="en">
@@ -13,6 +13,10 @@ export default (app)=>{
     </head>
     <body>
         <div id="root" >${app}</div>
+        <script>
+       window.pageDatas = ${JSON.stringify(store.getState())}
+        window.requestPath = "${path}";
+       </script>
        ${getScript()}
     </body>
     </html>

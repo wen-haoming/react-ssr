@@ -11,11 +11,13 @@ export default [
     {
         key:'/home',
         path:'/',
+        exact:true,
         component:Home,
         routes:[
           {
             key:'/base1',
             path:'/home/base1',
+            exact:true,
             component:Base1,
           },
           {
@@ -40,7 +42,7 @@ export default [
             },
             {
               key:'/detail2',
-              path:'/admin/detail2',
+              path:'/detail2',
               exact:true,
               component:Detail2
             }  

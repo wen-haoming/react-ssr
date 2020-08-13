@@ -1,10 +1,8 @@
-## 如何引入路由配置？
+## 如何引入redux呢？
 
-> 1. react-router-dom
-> 2. react-router-config 静态路由的配置
+1. 其实就是和原本的一样，在server和client都需要引入store，不过就是redux的使用是基于hooks的使用，非常方便
+2. 需要注意的是仓库为了浏览器调试是需要区分浏览器和服务器的环境，所以是个函数需要环境判断
+3. 关于store引入的位置**非常重要**,store服务端和客户端都是统一app组件为统一入口
+4. store仓库的内容需要用一个pageStore的变量去存储到全局上，然后放到客户端的store上,客户端加载自动获取
+5. 还有就是判断当前第一次进入的页面，如果服务器处理了数据，则什么也不做，如果服务器没有处理数据，则需要加载数据，这个条件是依据是否是当前路由判断，具体做法是在全局放一个第一次进入页面的路由地址，每个组件都需要判断是否匹配路由，如果匹配就不加载，不匹配的加载
 
-1. [配置静态路由](https://www.npmjs.com/package/react-router-config)
-2. 编写路由主页面(嵌入到client和server)
-3. client使用BrowserRouter渲染主页面
-4. server使用StaticRouter渲染主页面
-5. 嵌套路由的配置

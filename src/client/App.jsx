@@ -1,13 +1,21 @@
-import React from 'react'
-import Home from '@/pages/Home'
-import '../assets/global.css'
-import {BrowserRouter} from 'react-router-dom'
-import Router from '../routers/index'
+import React from "react";
+import Home from "@/pages/Home";
+import "../assets/global.css";
+import { BrowserRouter } from "react-router-dom";
+import Router from "../routers/index";
+import { Provider } from "react-redux";
+import storeFunc from "../store";
 
-const App = ()=>{
-    return  <BrowserRouter>
-    <Router></Router>
-    </BrowserRouter> 
-}
+let store = storeFunc()
 
-export default App
+const App = () => {
+  return (
+    <Provider store={store}>
+      <BrowserRouter>
+        <Router></Router>
+      </BrowserRouter>
+    </Provider>
+  );
+};
+
+export default App;
